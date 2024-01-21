@@ -23,28 +23,28 @@
   <!-- Header -->
 
   <header class="header">
-    <div class="container">
-      <div class="header-wrapper">
-        <nav class="header-nav">
-          <a class="logo" href="./index.html">Web<span>Studio</span></a>
+    <div class="header-wrapper container">
 
-          <ul class="menu">
-            <li class="menu-item"><a class="menu-link" href="./index.html">Studio</a></li>
-            <li class="menu-item"><a class="menu-link" href="">Portfolio</a></li>
-            <li class="menu-item"><a class="menu-link" href="">Contacts</a></li>
-          </ul>
-        </nav>
-        <address class="header-contacts">
-          <ul>
-            <li>
-              <a class="header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li>
-              <a class="header-contact" href="tel:+110001111111">+11 (000) 111-11-11</a>
-            </li>
-          </ul>
-        </address>
-      </div>
+      <nav class="header-nav">
+        <a class="logo" href="./index.html">Web<span>Studio</span></a>
+
+        <ul class="menu">
+          <li class="menu-item"><a class="menu-link" href="./index.html">Studio</a></li>
+          <li class="menu-item"><a class="menu-link" href="">Portfolio</a></li>
+          <li class="menu-item"><a class="menu-link" href="">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="header-contacts">
+        <ul class="header-contacts-list">
+          <li>
+            <a class="header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li>
+            <a class="header-contact" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </address>
+
     </div>
   </header>
 
@@ -52,7 +52,7 @@
 
     <!-- Hero -->
 
-    <section class="hero">
+    <section class="section hero">
       <div class="container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button class="hero-button" type="button">Order Service</button>
@@ -61,7 +61,7 @@
 
     <!-- Advantages -->
 
-    <section class="advantages">
+    <section class="section advantages">
       <div class="container">
         <h2 class="title advantages-title visually-hidden">Advantages</h2>
         <ul class="advantages-items">
@@ -99,29 +99,37 @@
 
     <!-- Our Team -->
 
-    <section class="team">
+    <section class=section team">
       <div class="container">
         <h2 class="title team-title">Our Team</h2>
         <ul class="team-list">
           <li class="team-member">
             <img src="./images/teammate-1.jpg" alt="Mark Guerrero" class="team-photo" width="264" />
-            <h3 class="team-name">Mark Guerrero</h3>
-            <p class="team-position">Product Designer</p>
+            <div class="team-description">
+              <h3 class="team-name">Mark Guerrero</h3>
+              <p class="team-position">Product Designer</p>
+            </div class="team-member">
           </li>
           <li class="team-member">
             <img src="./images/teammate-2.jpg" alt="Tom Ford" class="team-photo" width="264" />
-            <h3 class="team-name">Tom Ford</h3>
-            <p class="team-position">Frontend Developer</p>
+            <div class="team-description">
+              <h3 class="team-name">Tom Ford</h3>
+              <p class="team-position">Frontend Developer</p>
+            </div>
           </li>
           <li class="team-member">
             <img src="./images/teammate-3.jpg" alt="Camila Garcia" class="team-photo" width="264" />
-            <h3 class="team-name">Camila Garcia</h3>
-            <p class="team-position">Marketing</p>
+            <div class="team-description">
+              <h3 class="team-name">Camila Garcia</h3>
+              <p class="team-position">Marketing</p>
+            </div>
           </li>
           <li class="team-member">
             <img src="./images/teammate-4.jpg" alt="Daniel Wilson" class="team-photo" width="264" />
-            <h3 class="team-name">Daniel Wilson</h3>
-            <p class="team-position">UI Designer</p>
+            <div class="team-description">
+              <h3 class="team-name">Daniel Wilson</h3>
+              <p class="team-position">UI Designer</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -129,39 +137,51 @@
 
     <!-- Portfolio section -->
 
-    <section class="portfolio">
+    <section class="section portfolio">
       <div class="container">
         <h2 class="title portfolio-title">Our Portfolio</h2>
         <ul class="portfolio-list">
           <li class="portfolio-card card">
             <img class="card-image" src="./images/portfolio-image-1.jpg" alt="Banking app screenshot" width="360">
-            <h3 class="card-title">Banking App</h3>
-            <p class="card-category">App</p>
+            <div class="card-text">
+              <h3 class="card-title">Banking App</h3>
+              <p class="card-category">App</p>
+            </div>
           </li>
           <li class="portfolio-card card">
             <img class="card-image" src="./images/portfolio-image-2.jpg" alt="Cashless Payment" width="360">
-            <h3 class="card-title">Cashless Payment</h3>
-            <p class="card-category">Marketing</p>
+            <div class="card-text">
+              <h3 class="card-title">Cashless Payment</h3>
+              <p class="card-category">Marketing</p>
+            </div>
           </li>
           <li class="portfolio-card card">
             <img class="card-image" src="./images/portfolio-image-3.jpg" alt="Meditation App" width="360">
-            <h3 class="card-title">Meditation App</h3>
-            <p class="card-category">App</p>
+            <div class="card-text">
+              <h3 class="card-title">Meditation App</h3>
+              <p class="card-category">App</p>
+            </div>
           </li>
           <li class="portfolio-card card">
             <img class="card-image" src="./images/portfolio-image-4.jpg" alt="Taxi Service" width="360">
-            <h3 class="card-title">Taxi Service</h3>
-            <p class="card-category">Marketing</p>
+            <div class="card-text">
+              <h3 class="card-title">Taxi Service</h3>
+              <p class="card-category">Marketing</p>
+            </div>
           </li>
           <li class="portfolio-card card">
             <img class="card-image" src="./images/portfolio-image-5.jpg" alt="Screen Illustrations" width="360">
-            <h3 class="card-title">Screen Illustrations</h3>
-            <p class="card-category">Design</p>
+            <div class="card-text">
+              <h3 class="card-title">Screen Illustrations</h3>
+              <p class="card-category">Design</p>
+            </div>
           </li>
           <li class="portfolio-card card">
             <img class="card-image" src="./images/portfolio-image-6.jpg" alt="Online Courses" width="360">
-            <h3 class="card-title">Online Courses</h3>
-            <p class="card-category">Marketing</p>
+            <div class="card-text">
+              <h3 class="card-title">Online Courses</h3>
+              <p class="card-category">Marketing</p>
+            </div>
           </li>
         </ul>
       </div>

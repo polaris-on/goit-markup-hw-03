@@ -35,6 +35,10 @@ ul {
   list-style-type: none;
 }
 
+img {
+  display: block;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -42,7 +46,6 @@ ul {
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -70,8 +73,6 @@ ul {
 }
 
 .header {
-  padding: 26px 0;
-
   background-color: #ffffff;
   border-bottom: 1px solid #e7e9fc;
 }
@@ -83,9 +84,11 @@ ul {
 }
 .header-nav {
   display: flex;
-  gap: 76px;
+  align-items: center;
 }
 .logo {
+  margin-right: 76px;
+
   color: #4d5ae5;
 
   font-family: "Raleway", sans-serif;
@@ -107,6 +110,7 @@ ul {
   letter-spacing: 0.02em;
 }
 .menu-item {
+  padding: 24px 0;
 }
 .menu-link {
   color: #2e2f42;
@@ -116,10 +120,9 @@ ul {
   color: #404bbf;
 }
 .header-contacts {
-  gap: 40px;
   font-style: normal;
 }
-.header-contacts ul {
+.header-contacts-list {
   display: flex;
   justify-content: space-between;
   gap: 40px;
@@ -137,18 +140,19 @@ ul {
 
 /* ===Main=== */
 
-section {
+.section {
   padding: 120px 0;
 }
 
 .hero {
+  padding: 188px 0;
   text-align: center;
   min-height: 80vh;
   background-color: #2e2f42;
 }
 .hero-title {
   margin: 0 auto 48px;
-  max-width: 500px;
+  max-width: 496px;
 
   font-size: 56px;
   font-weight: 700;
@@ -158,6 +162,9 @@ section {
   color: #ffffff;
 }
 .hero-button {
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
   padding: 16px 32px;
 
   background: #4d5ae5;
@@ -225,6 +232,9 @@ section {
 .team-photo {
   margin-bottom: 32px;
 }
+.team-description {
+
+}
 .team-name {
   margin: 0 16px 8px 16px;
 
@@ -277,8 +287,13 @@ section {
 .card-image {
   margin-bottom: 32px;
 }
+.card-text {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
 .card-title {
-  margin: 0 16px 8px 16px;
+  margin-bottom: 8px;
 
   color: #2e2f42;
 
@@ -296,11 +311,11 @@ section {
 }
 .footer {
   background-color: #2e2f42;
-  padding: 102px 0 100px 0;
+  padding: 100px 0;
 }
 .footer-logo {
-  display: block;
-  margin-bottom: 18px;
+  display: inline-block;
+  margin-bottom: 16px;
 
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -315,7 +330,7 @@ section {
 }
 .footer-text {
   max-width: 264px;
-  
+
   color: #f4f4fd;
 
   line-height: 150%;
